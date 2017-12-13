@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour {
 
@@ -9,9 +10,10 @@ public class GameController : MonoBehaviour {
     public GUIText lifeText;
     public GUIText scoreText;
     public GUIText specialTimer;
+    public Text finalScore;
 
     public int lives;
-    private int score;
+    public int score;
     private float special, now, specialText;
 
     // Use this for initialization
@@ -57,6 +59,8 @@ public class GameController : MonoBehaviour {
     void UpdateScore()
     {
         scoreText.text = "Score: " + score;
+        finalScore.text = "Score: " + score;
+        GameState.StageScore = score;
     }
     public void AddScore(int newScore)
     {

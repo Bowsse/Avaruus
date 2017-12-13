@@ -85,22 +85,41 @@
     <Compile Include="Assets\Git UniTEAM\Threading Helper\TaskDistributer.cs" />
     <Compile Include="Assets\Git UniTEAM\Threading Helper\Thread.cs" />
     <Compile Include="Assets\Git UniTEAM\Threading Helper\UnityThreadHelper.cs" />
+    <Compile Include="Assets\LoadSceneOnClick.cs" />
+    <Compile Include="Assets\MenuController.cs" />
     <Compile Include="Assets\NeverSleep.cs" />
+    <Compile Include="Assets\OnClickContinue.cs" />
+    <Compile Include="Assets\OnClickPause.cs" />
+    <Compile Include="Assets\OnClickRestart.cs" />
+    <Compile Include="Assets\OnEnterFinish.cs" />
+    <Compile Include="Assets\QuitOnClick.cs" />
+    <Compile Include="Assets\Scripts\ActiveStateToggler.cs" />
     <Compile Include="Assets\Scripts\AndroidMovement.cs" />
     <Compile Include="Assets\Scripts\AndroidPlayerAnimator.cs" />
+    <Compile Include="Assets\Scripts\ApplicationManager.cs" />
+    <Compile Include="Assets\Scripts\ChangeColor.cs" />
     <Compile Include="Assets\Scripts\Control.cs" />
     <Compile Include="Assets\Scripts\DelAudioSfx.cs" />
+    <Compile Include="Assets\Scripts\DragMe.cs" />
+    <Compile Include="Assets\Scripts\DragPanel.cs" />
+    <Compile Include="Assets\Scripts\DropMe.cs" />
     <Compile Include="Assets\Scripts\EarthCollider.cs" />
     <Compile Include="Assets\Scripts\Enemy1Movement.cs" />
     <Compile Include="Assets\Scripts\FireProjectile.cs" />
+    <Compile Include="Assets\Scripts\GameState.cs" />
     <Compile Include="Assets\Scripts\Gravity.cs" />
     <Compile Include="Assets\Scripts\Movement.cs" />
+    <Compile Include="Assets\Scripts\PanelManager.cs" />
     <Compile Include="Assets\Scripts\Physics.cs" />
     <Compile Include="Assets\Scripts\PlayerAnimator.cs" />
     <Compile Include="Assets\Scripts\ProjectileScript.cs" />
+    <Compile Include="Assets\Scripts\ResizePanel.cs" />
     <Compile Include="Assets\Scripts\Rotator.cs" />
+    <Compile Include="Assets\Scripts\ScrollDetailTexture.cs" />
     <Compile Include="Assets\Scripts\ShipCollider.cs" />
     <Compile Include="Assets\Scripts\Shoot.cs" />
+    <Compile Include="Assets\Scripts\ShowSliderValue.cs" />
+    <Compile Include="Assets\Scripts\TiltWindow.cs" />
     <Compile Include="Assets\Scripts\explosion_animation_prefab_delete.cs" />
     <Compile Include="Assets\Scripts\roid.cs" />
     <Compile Include="Assets\Scripts\spawner.cs" />
@@ -108,6 +127,11 @@
     <Compile Include="Assets\bullet.cs" />
     <Compile Include="Assets\redball.cs" />
     <Compile Include="Assets\ölli.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Fonts\Jupiter\LICENSE.txt" />
+    <None Include="Assets\Materials\UI-Default-No-Alpha.shader" />
+    <None Include="Assets\Textures and Sprites\SF UI\Background\LICENSE.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

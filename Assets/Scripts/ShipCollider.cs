@@ -13,6 +13,8 @@ public class ShipCollider : MonoBehaviour
     float now, immune = 2f;
     public int lives;
     private GameController gameController;
+    public GameObject gameOverPanel;
+
 
 
     private void Start()
@@ -61,7 +63,7 @@ public class ShipCollider : MonoBehaviour
                         go.transform.localScale = new Vector3(i, i, i);
                         GameObject ds = Instantiate(DeathSound);
                         Destroy(go, 4);
-                        Invoke("Load", 0.4f);
+                        Invoke("GameOver", 0.4f);
                     }
                     else
                     {
@@ -100,10 +102,10 @@ public class ShipCollider : MonoBehaviour
         Damage(other.gameObject);
     }
 
-    void Load()
+    void GameOver()
     {
-        collision = false;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 0;
+        gameOverPanel.SetActive(true);
     }
     void Respawn()
     {
